@@ -50,6 +50,7 @@
 }
 .main-header {
 	background: #fff;
+	padding: 10px 0;
 }
 .container {
 	padding: 15px;
@@ -58,19 +59,53 @@
 }
 .main-logo {
 	float: left;
-	width: 150px;
-	height: 50px;
+	width: 92px;
+	height: 110px;
 }
 .main-logo img {
 	max-width: 100%;
 }
 .main-header-text {
 	float: left;
+	padding-left: 50px;
 }
 .main-header-contact {
 	float: right;
+	padding-left: 50px;
 }
-
+.header-operator-icon {
+	display: block;
+	float: right;
+}
+.contact {
+	font-size: 30px;
+	line-height: 40px;
+	color: #de9000;
+}
+h1 {
+	font-size: 40px;
+	line-height: 50px;
+	text-transform: uppercase;
+}
+.btn-call-my {
+	font-size: 30px;
+	line-height: 50px;
+	font-weight: bold;
+	background: #de9000;
+	border-radius: 5px;
+	padding: 0 10px;
+	text-align: center;
+	cursor: pointer;
+	box-shadow: 0 0 5px #000;
+}
+.btn-call-my:hover {
+	background: #ff1010;
+}
+.main-header-description {
+	font-size: 30px;
+	line-height: 40px;
+	font-style: italic;
+}
 
 
 .navbar {
@@ -82,6 +117,12 @@
 	height: 52px;
 	margin-bottom: -52px;
 }
+.navbar.wrap-navbar_fixed {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
 .navbar-list {
 	list-style: none;
 	max-width: 1200px;
@@ -90,8 +131,8 @@
 }
 .navbar-list li {
 	float: left;
-	padding: 5px;
-	font-size: 20px;
+	padding: 5px 15px;
+	font-size: 18px;
 	text-transform: uppercase;
 	
 }
@@ -299,4 +340,31 @@ h2 {
 	line-height: 70px;
 	color: #189d00;
 	text-shadow: 0 0 5px #189d00;
+}
+.block7 {
+	background: #000;
+	position: relative;
+	text-align: center;
+}
+.block7 .text-content {
+	color: #fff;
+	text-align: center;
+	text-indent: 0;
+}
+.block7:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	left: 0;
+	top: -100px;
+	background: url(../img/footer.png);
+	background-size: 100% 100%;
+}
+.block7 h2 {
+	color: #de9000;
+}
+.block4 {
+	background: url(../img/about-us.png);
 }
