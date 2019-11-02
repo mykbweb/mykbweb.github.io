@@ -71,3 +71,23 @@
 
 // скролл меню
 $(".navbar-list a").scrollBlock(1000, ".navbar");
+// показать форму обратной связи
+$('.btn-call-my, .call-my').click(function(e) {
+	e.preventDefault();
+	$('#call-my').css('display', 'table').hide().fadeIn(500);
+	return false;
+});
+$('.container-popup .close, .popup-wrap').click(function() {
+	$('.popup-wrap').fadeOut(500);
+});
+$('.container-popup').click(function(e) {
+	e.stopPropagation();
+});
+// подключаю галерею
+$(".slider-img a").touchTouch();
+// маска для ввода телефонного номера
+$("#userFone, #user-tel").mask("+38(999)-999-99-99");
+
+
+
+
