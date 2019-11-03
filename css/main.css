@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	font-family: Roboto;
 }
 .left {
 	float: left;
@@ -149,6 +150,47 @@ h1 {
 .navbar-list li a:hover {
 	text-decoration: underline;
 }
+
+
+.resp-icon {
+    display: none;
+}
+
+.resp .resp-icon {
+    display: block;
+    color: #fff;
+    cursor: pointer;
+}
+.resp .resp-icon:hover {
+    color: #14c31b;
+}
+.resp .resp-icon,
+.resp li {
+    float: none;
+    border-right: none;
+    padding-bottom: 7px;
+    
+}
+.resp.resp-hide {
+    height: 23px;
+    overflow: hidden;
+	background: transparent;
+}
+.resp {
+	background: rgba(0, 0, 0, .5);
+}
+
+.resp li {
+    float: none;
+	padding-bottom: 7px;
+	border-right: none;
+}
+
+
+
+
+
+
 .block1 {
 	background-image: url(../img/1.jpg);
 	padding: 100px 0 50px 0;
@@ -457,6 +499,7 @@ h2 {
 	right: -15px;
 	top: -15px;
 	cursor: pointer;
+	text-shadow: 0 0 5px #fff;
 }
 .container-popup .close:hover {
 	color: #f00;
@@ -487,4 +530,31 @@ h2 {
 }
 .slider-img img {
 	max-width: 100%;
+}
+.block9 {
+	background: #de9000;
+}
+table {
+	width: 100%;
+	padding: 5px;
+	background: #a8a8a8;
+	font-size: 20px;
+	text-align: center;
+}
+table td {
+	border: 1px solid #000;
+}
+#message-text {
+	display: block;
+	width: 100%;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 20px;
+	line-height: 30px;
+	margin-top: 10px;
+	resize: none;
+}
+.block7 .text-content {
+	font-size: 20px;
 }

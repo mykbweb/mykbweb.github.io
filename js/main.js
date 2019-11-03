@@ -83,11 +83,38 @@ $('.container-popup .close, .popup-wrap').click(function() {
 $('.container-popup').click(function(e) {
 	e.stopPropagation();
 });
+$('.click-contact').click(function(e) {
+	e.preventDefault();
+	$('#email-push').css('display', 'table').hide().fadeIn(500);
+	return false;
+});
+
+
+
+
+
 // подключаю галерею
 $(".slider-img a").touchTouch();
 // маска для ввода телефонного номера
 $("#userFone, #user-tel").mask("+38(999)-999-99-99");
-
+    // адаптивное меню
+    $(window).resize(function() {
+        let widthWindow = $(document).width();
+        if(widthWindow <= 750) {
+            $('.navbar-list').addClass('resp');
+        } else {
+            $('.navbar-list').removeClass('resp');
+        }
+    });
+    $(window).trigger('resize');
+    
+    $('.resp-icon').click(function() {
+        $('.navbar-list').toggleClass('resp-hide');
+    });
+    $(window).add('body').scroll(function() {
+        $('.navbar-list').addClass('resp-hide');
+    });
+    
 
 
 
