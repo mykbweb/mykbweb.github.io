@@ -72,7 +72,7 @@
 // скролл меню
 $(".navbar-list a").scrollBlock(1000, ".navbar");
 // показать форму обратной связи
-$('.btn-call-my, .call-my').click(function(e) {
+$('.btn-call-my, .call-my, .fone-contact').click(function(e) {
 	e.preventDefault();
 	$('#call-my').css('display', 'table').hide().fadeIn(500);
 	return false;
